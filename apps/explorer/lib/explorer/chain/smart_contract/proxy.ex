@@ -149,10 +149,14 @@ defmodule Explorer.Chain.SmartContract.Proxy do
       when not is_nil(proxy_address_hash) and not is_nil(abi) do
     {implementation_address_hash_strings, _names} = get_implementation_address_hash(smart_contract, options)
 
-    implementation_address_hash_strings
-    |> Enum.reduce([], fn implementation_address_hash_string, acc ->
-      SmartContract.get_smart_contract_abi(implementation_address_hash_string) ++ acc
-    end)
+    if implementation_address_hash_strings do
+      implementation_address_hash_strings
+      |> Enum.reduce([], fn implementation_address_hash_string, acc ->
+        SmartContract.get_smart_contract_abi(implementation_address_hash_string) ++ acc
+      end)
+    else
+      []
+    end
   end
 
   def get_implementation_abi_from_proxy(_, _), do: []
