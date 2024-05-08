@@ -7,7 +7,7 @@ services:
     # TODO:从 https://github.com/phpmac/frontend/ 构建
     # image: frontend
     build:
-      context: /~/frontend
+      context: /root/frontend
       dockerfile: Dockerfile
     pull_policy: always
     platform: linux/amd64
