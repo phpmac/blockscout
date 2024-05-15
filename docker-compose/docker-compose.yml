@@ -41,9 +41,9 @@ services:
     links:
       - db:database
     environment:
-      ETHEREUM_JSONRPC_HTTP_URL: http://65.49.196.244:26153/
-      ETHEREUM_JSONRPC_TRACE_URL: http://65.49.196.244:26153/
-      ETHEREUM_JSONRPC_WS_URL: wss://65.49.196.244:26156/
+      ETHEREUM_JSONRPC_HTTP_URL: http://107.175.197.134:263/
+      ETHEREUM_JSONRPC_TRACE_URL: http://107.175.197.134/
+      ETHEREUM_JSONRPC_WS_URL: wss://107.175.197.134:26156/
       CHAIN_ID: "9998"
 
   visualizer:
