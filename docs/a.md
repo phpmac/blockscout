@@ -15,4 +15,6 @@ geth --datadir data0 --http --http.addr 0.0.0.0 --http.port 26153 --ws --ws.addr
 geth --datadir data0 --miner.etherbase 0x51282275dfa31d8063fdc5f3e41dd18c1dceb5e7 --mine --miner.threads 2 --rpc.enabledeprecatedpersonal
 
 
+
+
 ```
