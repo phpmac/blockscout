@@ -127,7 +127,7 @@ services:
       - frontend
       - stats
     extends:
-      file: ./services/nginx.yml
+      file: ./services/nginx.dokply.yml
       service: proxy
     networks:
       - dokploy-network
